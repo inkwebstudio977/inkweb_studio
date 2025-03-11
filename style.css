@@ -759,7 +759,7 @@ footer{
 }
 /* This is the code about services */
 .service-hero{
-    background: url(../public/assets/Images/3334896.jpg);
+    background: url(../assets/Images/3334896.jpg);
     background-position: 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -770,7 +770,7 @@ footer{
     display: flex;
 }
 .project-hero{
-    background: url(../public/assets/Images/3334896.jpg);
+    background: url(../assets/Images/3334896.jpg);
     background-position: 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -782,7 +782,7 @@ footer{
 }
 /* This code is written for about page */
 .about-hero{
-    background: url(../public/assets/Images/3334896.jpg);
+    background: url(../assets/Images/3334896.jpg);
     background-position: 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -795,7 +795,7 @@ footer{
 
 /*All pricing page code starts here*/
 .pricing-hero{
-    background: url(../public/assets/Images/3334896.jpg);
+    background: url(../assets/Images/3334896.jpg);
     background-position: 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1586,7 +1586,7 @@ input#review5:checked ~ .custom-pagination label[for="review5"] {
 
 /* This is the  best design section start here */
 .best-design{
-    background: url(../public/assets/Images/wwang_040522_49.jpg);
+    background: url(../assets/Images/wwang_040522_49.jpg);
     background-position: 0;
     background-repeat: no-repeat;
     background-size: cover;
