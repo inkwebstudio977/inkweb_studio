@@ -1158,15 +1158,15 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 270px;
+    height: 200px;
     overflow: hidden;
     position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .testimonial-card {
     background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5);
     transform: translateY(-5px);
     transition: transform 0.3s ease-in-out;
     text-align: left;
