@@ -1325,7 +1325,7 @@ input#review5:checked ~ .custom-pagination label[for="review5"] {
 }
 
 .hero-contact{
-    background: url(../public/assets/Images/3334896.jpg);
+    background: url(../assets/Images/3334896.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
