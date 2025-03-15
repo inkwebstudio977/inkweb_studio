@@ -256,6 +256,12 @@
         font-weight: 700;
         text-align: center;
     }
+    .left-part2{
+        order: 2;
+    }
+    .right-part2{
+        order: 1;
+    }
     
     .left-part, .right-part2, .left-part3 img {
         width: 100%;
