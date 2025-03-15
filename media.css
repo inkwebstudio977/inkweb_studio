@@ -459,7 +459,7 @@
     .wave-child {
         background-color: #101e9b;
         width: 170px;
-        height: 270px;
+        height: 250px;
         border-radius: 20px;
         padding: 10px;
         text-align: center;
@@ -476,8 +476,8 @@
     
     .wave-child p {
         color: #fff;
-        font-size: 0.9rem;
-        text-align: left;
+        font-size: 0.6rem;
+        text-align: justify;
     }
     
     .wave-child img {
@@ -811,7 +811,7 @@
     }
     /* ... this is contact section  ... */
     .hero-contact{
-        background: url(../public/assets/Images/3334896.jpg);
+        background: url(../assets/Images/3334896.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -885,6 +885,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 500px;
     }
     .inner-child-box{
         width: 100%;
