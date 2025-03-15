@@ -476,7 +476,7 @@
     
     .wave-child p {
         color: #fff;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         text-align: justify;
     }
     
@@ -885,7 +885,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 500px;
+        height: 600px;
     }
     .inner-child-box{
         width: 100%;
