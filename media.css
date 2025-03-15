@@ -459,9 +459,9 @@
     .wave-child {
         background-color: #101e9b;
         width: 170px;
-        height: 250px;
+        height: 260px;
         border-radius: 20px;
-        padding: 10px;
+        padding: 20px;
         text-align: center;
         color: white;
         font-size: 1rem;
@@ -476,7 +476,7 @@
     
     .wave-child p {
         color: #fff;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         text-align: justify;
     }
     
@@ -874,7 +874,7 @@
     .progress{
         margin-top: 40px;
         width: 100%;
-        height: 740px;
+        height: 800px;
     }
     .outer-box{
         width: 100%;
@@ -885,7 +885,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 600px;
+    
     }
     .inner-child-box{
         width: 100%;
