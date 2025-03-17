@@ -256,12 +256,22 @@
         font-weight: 700;
         text-align: center;
     }
+<<<<<<< HEAD
     .right-part2{
         order: -1;
     }
     .left-part2{
         order: 2;
     }
+=======
+    .left-part2{
+        order: 2;
+    }
+    .right-part2{
+        order: 1;
+    }
+    
+>>>>>>> 792a8f506a895f20be0dce7f7f5f1a45b1a93461
     .left-part, .right-part2, .left-part3 img {
         width: 100%;
         height: auto;
