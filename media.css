@@ -979,6 +979,7 @@
     }
     .content-t p{
         text-align: justify;
+        word-spacing: -2px;
     }
     .info-sec{
         padding: 0 30px 30px 30px;
