@@ -977,6 +977,9 @@
     .testimonial-card{
         padding: 10px;
     }
+    .content-t p{
+        text-align: justify;
+    }
     .info-sec{
         padding: 0 30px 30px 30px;
         height: 30vh;
