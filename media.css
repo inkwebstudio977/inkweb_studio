@@ -969,6 +969,10 @@
     }
     .reviews-container{
         width: 90%;
+        margin-top: 10px;
+    }
+    .reviews{
+        height: 150px;
     }
     .info-sec{
         padding: 0 30px 30px 30px;
