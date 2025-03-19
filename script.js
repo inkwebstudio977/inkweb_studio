@@ -109,34 +109,36 @@ links.forEach(link => {
 });
 
 //this is the scroll animation trigger 
-gsap.registerPlugin(ScrollTrigger);
 
-// Animating the text content
-gsap.from(".content1", {
-    opacity: 0,
-    x: -100,
-    duration: 1,
-    scrollTrigger: {
-        trigger: ".banner",
-        start: "top 80%",
-        end: "top 50%",
-        scrub: true,
-        markers: false // <-- Set to false to remove markers
-    }
-});
+    gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".content2", {
-    opacity: 0,
-    x: 100,
-    duration: 1,
-    scrollTrigger: {
-        trigger: ".banner",
-        start: "top 80%",
-        end: "top 50%",
-        scrub: true,
-        markers: false // <-- Set to false to remove markers
-    }
-});
+    gsap.from(".content1", {
+        opacity: 0,
+        x: -300,
+        duration: 1,
+        scrollTrigger: {
+            trigger: ".content1", // `.banner` ki jagah `.content1`
+            start: "top 80%",
+            end: "top 50%",
+            scrub: true,
+            markers: true // ✅ Enable debugging markers
+        }
+    });
+
+    gsap.from(".content2", {
+        opacity: 0,
+        x: 300,
+        duration: 1,
+        scrollTrigger: {
+            trigger: ".content2",
+            start: "top 80%",
+            end: "top 50%",
+            scrub: true,
+            markers: true
+        }
+    });
+    console.log(gsap);
+    console.log(ScrollTrigger);
 
 
 
