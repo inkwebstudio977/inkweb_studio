@@ -101,7 +101,8 @@ header {
     width: 1200px;
     margin: auto;
     position: relative;
-    overflow:visible;
+    /* overflow:visible; */
+    
 }
  
 .content1{

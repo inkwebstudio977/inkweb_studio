@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const submitButton = document.getElementById("submitform");
 
     if (submitButton) {  // ✅ Ensure button exists before adding event listener
-        submitButton.addEventListener("click", async function(event) {
+        submitButton.addEventListener("click", async function (event) {
             event.preventDefault(); // Prevent default form submission
 
             // Get form values
@@ -110,35 +110,34 @@ links.forEach(link => {
 
 //this is the scroll animation trigger 
 
-    gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from(".content1", {
-        opacity: 0,
-        x: -300,
-        duration: 1,
-        scrollTrigger: {
-            trigger: ".content1", // `.banner` ki jagah `.content1`
-            start: "top 80%",
-            end: "top 50%",
-            scrub: true,
-            markers: false// ✅ Enable debugging markers
-        }
-    });
+gsap.from(".content1", { 
+    opacity: 0, 
+    y: 50, 
+    duration: 1.5,
+    delay: 0.5,
+    ease: "power2.out"
+});
 
-    gsap.from(".content2", {
-        opacity: 0,
-        x: 300,
-        duration: 1,
-        scrollTrigger: {
-            trigger: ".content2",
-            start: "top 80%",
-            end: "top 50%",
-            scrub: true,
-            markers: false
-        }
-    });
-    console.log(gsap);
-    console.log(ScrollTrigger);
+gsap.from(".content2", {
+    opacity: 0,
+    x: 100,
+    duration: 1.5,
+    delay: 0.8,
+    ease: "power2.out"
+});
+
+gsap.to(".card img", {
+    y: 15, // 15px upar-niche move karegi
+    duration: 2,
+    ease: "power1.inOut",
+    repeat: -1, 
+    yoyo: true
+});
+
+// console.log(gsap);
+// console.log(ScrollTrigger);
 
 
 

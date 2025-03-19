@@ -74,8 +74,12 @@
     }
     
     .hero {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         text-align: center;
-        position: relative;
+        height: 900px;
+        width: 100%;
     }
     
     .hero h1 {
@@ -101,19 +105,19 @@
     }
     
     .banner {
-        position: absolute;
-        top: 0;
-        left: -14px;
         display: flex;
         width: 100%;
         margin: auto;
+        flex-direction: column;
+        padding: 0 30px;
     }
     
     .content1 {
         width: 100%;
-        margin-top: 150px;
+        margin-top: 80px;
         text-align: center;
-        padding: 0 20px;
+        margin-left: 0;
+         order: 2;
     }
     
     .content1 h1 {
@@ -148,15 +152,18 @@
     }
     
     .content2 {
+        order: 1;
+        width: 100%;
         margin-top: 80px;
         margin-left: 0;
         text-align: center;
+        
     }
     
     .card img {
         width: 100%;
         height: auto;
-        display: none;
+        /* display: none; */
     }
     
     footer {
