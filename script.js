@@ -121,7 +121,7 @@ links.forEach(link => {
             start: "top 80%",
             end: "top 50%",
             scrub: true,
-            markers: true // ✅ Enable debugging markers
+            markers: false// ✅ Enable debugging markers
         }
     });
 
@@ -134,7 +134,7 @@ links.forEach(link => {
             start: "top 80%",
             end: "top 50%",
             scrub: true,
-            markers: true
+            markers: false
         }
     });
     console.log(gsap);
