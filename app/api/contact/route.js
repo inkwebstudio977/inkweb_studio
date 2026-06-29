@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
 import { connectDB } from "@/app/libs/db"
 import Lead from "@/app/models/Lead";
-import { transporter } from "@/app/libs/mail";
+import { getTransporter } from "@/app/libs/mail";
 import { render } from "@react-email/render";
 import { contactSchema } from "@/app/libs/validation";
 
@@ -16,7 +16,8 @@ export async function POST(req) {
     const body = contactSchema.parse(json);
 
     await connectDB();
-    await transporter.verify();
+    const mailer = getTransporter();
+    await mailer.verify();
     console.log("✅ SMTP Connected Successfully");
 
     const lead = await Lead.create({
@@ -38,8 +39,8 @@ export async function POST(req) {
       <CustomerConfirmation lead={lead} />
     );
 
-    await transporter.sendMail({
-      from: `"Inkweb Studioz" <${process.env.SMTP_USER}>`,
+    await mailer.sendMail({
+      from: `"Inkweb Studioz" <${process.env["SMTP_USER"]}>`,
       to: body.email,
       subject: "Thank you for contacting Inkweb Studioz",
       html: customerEmail,
